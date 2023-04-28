@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Example</title>
+        <script>
+            window.setTimeout( function() {
+            window.location.reload();
+            }, 1000);
+        </script>
+    </head>
+    <body>
+
+  {% if (status) == 0  %}
+  <p>No one is in the Room</p>
+  <img src="../static/IMAGE-1.png" width="100%" height="100%">
+   {% endif %}
+    {% if (status) == 1 %}
+  <p>There is someone in the room!</p>
+  <img src="../static/IMAGE-2.png" width="100%" height="100%">
+   {% endif %}
+
+   </body>
+ </html>
